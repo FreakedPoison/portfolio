@@ -27,8 +27,10 @@ function renderExpenses() {
     li.appendChild(deleteBtn);
     list.appendChild(li);
     calculateTotal();
+
   });
 }
+
 function calculateTotal() {
   let total = 0;
 
