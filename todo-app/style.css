@@ -1,0 +1,9 @@
+body {
+    font-family: Arial;
+    padding: 40px;
+}
+
+li {
+    cursor: pointer;
+    margin: 8px 0;
+}
