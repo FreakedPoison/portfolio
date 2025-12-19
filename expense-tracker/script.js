@@ -22,11 +22,11 @@ function renderExpenses() {
       expenses.splice(index, 1);
       saveExpenses();
       renderExpenses();
-      calculateTotal();
     });
 
     li.appendChild(deleteBtn);
     list.appendChild(li);
+    calculateTotal();
   });
 }
 function calculateTotal() {
