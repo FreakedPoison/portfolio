@@ -11,12 +11,34 @@ function loadExpenses() {
 function renderExpenses() {
   list.innerHTML = "";
 
-  expenses.forEach((expense) => {
+  expenses.forEach((expense, index) => {
     const li = document.createElement("li");
     li.innerText = `${expense.title} - ₹${expense.amount}`;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "❌";
+
+    deleteBtn.addEventListener("click", () => {
+      expenses.splice(index, 1);
+      saveExpenses();
+      renderExpenses();
+      calculateTotal();
+    });
+
+    li.appendChild(deleteBtn);
     list.appendChild(li);
   });
 }
+function calculateTotal() {
+  let total = 0;
+
+  expenses.forEach((expense) => {
+    total += Number(expense.amount);
+  });
+
+  document.getElementById("total").innerText = `Total: ₹${total}`;
+}
+
 
 const titleInput = document.getElementById("title");
 const amountInput = document.getElementById("amount");
