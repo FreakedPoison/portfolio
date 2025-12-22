@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #24292e;
+}
+
+/* Search box */
+.search-box {
+  margin-bottom: 30px;
+}
+
+#username {
+  padding: 10px;
+  width: 220px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchBtn {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #24292e;
+  color: white;
+}
+
+#searchBtn:hover {
+  background-color: #444;
+}
+
+/* Profile card */
+#profile {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  color: #24292e;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: white;
+  background-color: #2da44e;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  background-color: #218639;
+}
+#repos {
+  margin-top: 40px;
+}
+
+.repo {
+  background: white;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.repo a {
+  font-weight: bold;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.repo p {
+  font-size: 14px;
+  color: #555;
+}
